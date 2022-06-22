@@ -39,6 +39,8 @@ def getDataPoint(quote):
 	return stock, bid_price, ask_price, price
 
 def getRatio(price_a, price_b):
+  if (price_b == 0):
+    return 0
   return price_a/price_b
 
 # Main
